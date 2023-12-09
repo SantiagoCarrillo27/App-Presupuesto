@@ -9,14 +9,10 @@ import { Router } from '@angular/router';
 })
 export class IngresarPresupuestoComponent {
 
-  cantidad:number=0
-  cantidadIncorrecta:Boolean=false
+  cantidad:number = 0
+  cantidadIncorrecta:Boolean = false
 
-  constructor(private _presupuestoService: PresupuestoService, 
-        private router:Router){
-
-
-
+  constructor(private _presupuestoService: PresupuestoService,private router:Router){
   }
 
   agregar(){
@@ -27,7 +23,7 @@ export class IngresarPresupuestoComponent {
       this.router.navigate(['/gastos']);
 
     }else{
-      this.cantidadIncorrecta=true;   
+      this.cantidadIncorrecta=true;
      }
 
   }
