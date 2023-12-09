@@ -20,4 +20,8 @@ export class GastosComponent {
     console.log(this._presupuestoService.presupuesto)
   }
 
+  volverInicio(){
+    this.router.navigate(['/ingresarPresupuesto'])
+  }
+
 }
