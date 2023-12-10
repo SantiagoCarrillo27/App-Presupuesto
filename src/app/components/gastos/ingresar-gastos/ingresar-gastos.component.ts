@@ -31,7 +31,7 @@ export class IngresarGastosComponent {
 
     if(this.cantidad > this._presupuestoService.restante){
       this.formularioIncorrecto = true;
-      this.textIncorrecto = 'La cantidad ingresada es mayor que el presupuesto';
+      this.textIncorrecto = 'Cantidad ingresada mayor que el presupuesto';
       return;
     }
 
