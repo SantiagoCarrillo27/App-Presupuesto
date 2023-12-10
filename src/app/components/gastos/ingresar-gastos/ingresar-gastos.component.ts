@@ -40,6 +40,12 @@ export class IngresarGastosComponent {
       this.nombreGasto = '';
       this.cantidad = 0;
       this.textIncorrecto ='Nombre gasto o cantidad incorrecta';
+      return;
+    }if(this.nombreGasto === '' || this.cantidad <= 0){
+
+      this.formularioIncorrecto = true;
+      this.textIncorrecto = '¡¡ Ups, faltan datos por llenar !!';
+      return;
     }else{
 
       const GASTO = {
