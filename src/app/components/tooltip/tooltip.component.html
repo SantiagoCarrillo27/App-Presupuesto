@@ -1,0 +1,13 @@
+<div class="tooltip-container">
+  <ul class="list-inline">
+    <li class="list-inline-item text-white text-bolder">Info</li>
+    <li class="icon text-white list-inline-item" (mouseover)="showTooltip()" (mouseout)="hideTooltip()">&#9432;</li>
+  </ul>
+  <div class="tooltip font-monospace" [style.opacity]="isTooltipVisible ? '1' : '0'">
+    <h3>Información de uso</h3>
+    <p>La siguiente aplicación te ayuda a poder gestionar tus gatos, debes colocar tu presupuesto y por cada gasto que hagas, la aplicación te ira mostrando cuanto dinero te sobra y si ya casi lo gastas todo o si llevas la mitad gastada, te ira
+      mostrando mediante colores.
+    </p>
+  </div>
+</div>
+

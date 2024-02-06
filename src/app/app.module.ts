@@ -10,6 +10,7 @@ import { IngresarPresupuestoComponent } from './components/ingresar-presupuesto/
 import { IngresarGastosComponent } from './components/gastos/ingresar-gastos/ingresar-gastos.component';
 import { ListarGastosComponent } from './components/gastos/listar-gastos/listar-gastos.component';
 import { RouterLink } from '@angular/router';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RouterLink } from '@angular/router';
     IngresarPresupuestoComponent,
     IngresarGastosComponent,
     ListarGastosComponent,
+    TooltipComponent,
   ],
   imports: [
     BrowserModule,

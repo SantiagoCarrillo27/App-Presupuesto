@@ -1,0 +1,38 @@
+/* Estilos del tooltip */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  font-size: 40px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 27rem;
+  padding-top: 1rem;
+}
+
+.tooltip {
+  width: 400px;
+  position: absolute;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+  max-width: 400px;
+  opacity: 0;  /* Usamos 'opacity' en lugar de 'display' */
+  transition: opacity 0.3s ease;  /* Agregamos una transición para un efecto suave */
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f9f9f9;
+}
